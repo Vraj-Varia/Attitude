@@ -1,0 +1,352 @@
+.bridal-section {
+  position: relative;
+  background: var(--bg-light);
+}
+
+.bridal-builder-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.builder-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.builder-step {
+  padding: 1.75rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-card);
+}
+
+.step-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.step-num {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--gold-primary);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(184, 134, 11, 0.1);
+  border: 1px solid var(--border-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.step-title {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  color: var(--text-dark);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.step-sub {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.makeup-options-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.option-card {
+  padding: 1.25rem;
+  background: var(--bg-light);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.option-card:hover {
+  border-color: var(--border-gold);
+  background: #FFFDF7;
+}
+
+.option-card.active {
+  border-color: var(--gold-primary);
+  background: linear-gradient(135deg, #FFFDF5 0%, #FFF8EE 100%);
+  box-shadow: 0 5px 20px rgba(184, 134, 11, 0.15);
+}
+
+.option-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+
+.option-title {
+  font-size: 1.05rem;
+  color: var(--text-dark);
+  font-weight: 700;
+}
+
+.option-price {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--gold-primary);
+}
+
+.option-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.prebridal-options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.checkbox-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 1rem;
+  background: var(--bg-light);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.checkbox-option:hover {
+  border-color: var(--border-gold);
+}
+
+.checkbox-option.active {
+  border-color: var(--gold-primary);
+  background: rgba(184, 134, 11, 0.08);
+}
+
+.empty-check {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1.5px solid var(--text-muted);
+}
+
+.checkbox-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox-title {
+  font-size: 0.875rem;
+  color: var(--text-dark);
+  font-weight: 700;
+}
+
+.checkbox-price {
+  font-size: 0.775rem;
+  color: var(--gold-primary);
+  font-weight: 700;
+}
+
+.guest-counter-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background: var(--bg-light);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+}
+
+.guest-label {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--text-dark);
+  font-weight: 700;
+}
+
+.guest-sub {
+  display: block;
+  font-size: 0.775rem;
+  color: var(--text-muted);
+}
+
+.counter-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.counter-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(184, 134, 11, 0.1);
+  border: 1px solid var(--border-gold);
+  color: var(--gold-primary);
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+  font-weight: 700;
+}
+
+.counter-btn:hover {
+  background: var(--gold-primary);
+  color: #FFFFFF;
+}
+
+.counter-val {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  min-width: 24px;
+  text-align: center;
+}
+
+/* Summary Box */
+.builder-summary-col {
+  position: sticky;
+  top: 100px;
+}
+
+.summary-card {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background: var(--bg-card);
+  border: 1.5px solid var(--gold-primary);
+  box-shadow: 0 15px 35px rgba(184, 134, 11, 0.15);
+}
+
+.summary-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.summary-header h3 {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  color: var(--text-dark);
+  font-weight: 700;
+}
+
+.summary-line-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.summary-line {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  color: var(--text-dark);
+  font-weight: 700;
+}
+
+.sub-line {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.summary-total-box {
+  padding: 1.25rem;
+  background: rgba(184, 134, 11, 0.08);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+
+.total-label {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--gold-rose);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+}
+
+.total-val {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--gold-primary);
+}
+
+.perks-box {
+  background: #FFFDF9;
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  border: 1px dashed var(--border-gold);
+}
+
+.perks-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: var(--rose-accent);
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.perks-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.perks-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.8rem;
+  color: var(--text-main);
+  line-height: 1.3;
+}
+
+.summary-book-btn {
+  padding: 16px;
+  font-size: 0.95rem;
+}
+
+.summary-footer-text {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .bridal-builder-grid {
+    grid-template-columns: 1fr;
+  }
+  .prebridal-options-grid {
+    grid-template-columns: 1fr;
+  }
+  .builder-summary-col {
+    position: static;
+  }
+}
